@@ -16,19 +16,19 @@
 </div>
 </ion-header>
 <ion-content padding>
- <ion-list>
+<div class="slides-wrapper" #slideswrapper>
   <ion-slides [pager]="true">
-    <ion-slide class="lim-css" *ngFor = "let slid of serveSelect" >
+    <ion-slide class="lim-css" *ngFor = "let slid of serveSelect">
       <div class="dashboard-icons">
         <ion-card *ngFor = "let lista of slid" (click)="openPage(lista.component)">
           <ion-icon class="pop-in"
                     name="{{lista.icon}}"></ion-icon>
                     {{lista.title}}        
-        </ion-card>  
+        </ion-card> 
       </div>
     </ion-slide>
-  </ion-slides>         
- </ion-list>
+  </ion-slides>
+</div>
  <div>
     <button 
     menuToggle class="foot-css">

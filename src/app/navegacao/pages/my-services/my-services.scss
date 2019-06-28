@@ -20,10 +20,10 @@ ion-content {
         }
       }
       ion-slides {
-        height: auto;
+        height: 100%;
   
         .swiper-container {
-          height: auto;
+          height: 100%;
           padding-top: 10px;
           .swiper-pagination {
             top: 0;
@@ -110,38 +110,54 @@ h2 {
 //     padding: 20px;
 //     margin: auto;
 // }
+
 page-dashboard-favorite .h2 {
   width: 84%;
-}
-.lim-css{
-  height: 354px;
-  width: 340px;
-  overflow-y: scroll;
-}
-.button-md {
-  box-shadow:none;
-  -webkit-box-shadow:none;
-  font-size: xx-large;
-  color: #003069;
-  margin-top: 20px; 
-  margin: auto;
-}
-.scroll-content {
-  background-color: #e9f7fe !important;
-}
 
-      }
-.bar-buttons-md {
-  font-size: 30px;
-  padding-left: 25px;
+  .lim-css{
+    width: 340px;
+    overflow-y: scroll;
+  }
+  .button-md {
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    font-size: xx-large;
+    color: #003069;
+    margin-top: 20px; 
+    margin: auto;
+  }
+  .scroll-content {
+    background-color: #e9f7fe !important;
+  }
   
-}  
-.foot-css{
-background-color: #e9f7fe;
-color: #003069;
-}   
-page-dashboard-favorite .button-md {
-  font-size: 20px;
-  padding-top: 40px;
+        }
+  .bar-buttons-md {
+    font-size: 30px;
+    padding-left: 25px;
+    
+  }  
+  .foot-css{
+  background-color: #e9f7fe;
+  color: #003069;
+  }   
+  page-dashboard-favorite .button-md {
+    font-size: 20px;
+    padding-top: 40px;
+  }
+  
+  // ------
+  
+  .bot, .notif-cs {
+    display: none;
+  }
+  
+  .scroll-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .slides-wrapper {
+    flex: 1;
+    position: relative;
+  }
 }
-
